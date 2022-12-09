@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: rgb(179, 171, 223);
+}
+
+.App {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 2px 64px rgba(53, 7, 123, 0.2);
+}
+
+.calcolatrice {
+  width: 100%;
+  max-width: 400px;
+  background-color: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.display {
+  padding: 20px;
+  text-align: right;
+  background-color: #aa15e0;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 300;
+}
+.display span {
+  font-size: 16px;
+  color: rgb(77, 77, 77);
+}
+button {
+  appearance: none;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 20px;
+  padding: 16px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+button:hover {
+  color: #f305a0;
+  opacity: 0.6;
+}
+
+.operatori {
+  display: flex;
+}
+
+.operatori button {
+  flex: 1 1 0%;
+  background-color: #37045b;
+  font-weight: 700;
+}
+
+.numeri {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.numeri button {
+  flex: 1 1 33.333%;
+  max-width: 33.333%;
+  background-color: #400471;
+}
